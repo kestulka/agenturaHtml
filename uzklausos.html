@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Užklausos forma</h1>
+    </header>
+    <form method="get">
+        <div>
+            <label for="vardas">Vardas: </label>
+            <input type="text" name="vardas" id="vardas" pattern="[A-Z][a-z]" required>
+        </div>
+        <br>
+        <div>
+            <label for="pastas">Paštas: </label>
+            <input type="email" name="pastas" id="pastas" placeholder="example@email.com" required>
+        </div>
+        <br>
+        <div>
+            <label for="telefonas">Tel.nr: </label>
+            <input type="tel" name="telefonas" id="telefonas" pattern="[0-9]" minlength="9" maxlength="9" required>
+        </div>
+        <br>
+        <fieldset style="width: 300px;">
+            <legend>Dropdownai: </legend>
+            <select name="dropdown1" id="dropdown">
+                <option value="labas">labas</option>
+                <option value="sveiki">sveiki</option>
+                <option value="zdare">zdare</option>
+                <option value="salam">salam</option>
+            </select>
+            <select name="dropdown2" id="dropdown">
+                <option value="labas">labas</option>
+                <option value="sveiki">sveiki</option>
+                <option value="zdare">zdare</option>
+                <option value="salam">salam</option>
+            </select>
+            <select name="dropdown3" id="dropdown">
+                <option value="labas">labas</option>
+                <option value="sveiki">sveiki</option>
+                <option value="zdare">zdare</option>
+                <option value="salam">salam</option>
+            </select>
+        </fieldset>
+        <br>
+        <div>
+            <label for="data">pasirinkite data: </label>
+            <input type="date" name="data" id="data" value="2023-09-22" min="2023-09-01" max="2023-12-31" required>
+        </div>
+        <br>
+        <div>
+            <label for="checkbox">pasirinkimas 1 </label>
+            <input type="checkbox" name="checkbox" id="checkbox1">
+        </div>
+        <br>
+        <div>
+            <label for="checkbox">pasirinkimas 2 </label>
+            <input type="checkbox" name="checkbox" id="checkbox2">
+        </div>
+        <br>
+        <div>
+            <label for="checkbox">pasirinkimas 3 </label>
+            <input type="checkbox" name="checkbox" id="checkbox3">
+        </div>
+        <br>
+        <div>
+            <label for="checkbox">pasirinkimas 4 </label>
+            <input type="checkbox" name="checkbox" id="checkbox4">
+        </div>
+        <br>
+        <div>
+            <label for="burbulas">burbulas 1</label>
+            <input type="radio" name="burbulas" id="burbulas1">
+        </div>
+        <br>
+        <div>
+            <label for="burbulas">burbulas 2</label>
+            <input type="radio" name="burbulas" id="burbulas2">
+        </div>
+        <br>
+        <div>
+            <label for="burbulas">burbulas 3</label>
+            <input type="radio" name="burbulas" id="burbulas3">
+        </div>
+        <br>
+        <div>
+            <label for="burbulas">burbulas 4</label>
+            <input type="radio" name="burbulas" id="burbulas4">
+        </div>
+        <br>
+        <div>
+            <label for="istorija">parasykite istorija:</label>
+            <textarea id="istorija1" name="istorija" rows="5" cols="30" maxlength="200" placeholder="ne daugiau nei 200 zodziu" required></textarea>
+        </div>
+        <br>
+        <input type="submit" value="pateikti">
+    </form>
+</body>
+</html>

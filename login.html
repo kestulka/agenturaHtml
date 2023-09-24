@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="get">
+        <div>
+            <label for="vardas">Vardas: </label>
+            <input type="text" name="vardas" id="vardas" required>
+        </div>
+        <div>
+            <label for="pastas">Paštas: </label>
+            <input type="email" name="pastas" id="pastas" required>
+        </div>
+        <div>
+            <label for="slaptazodis">Slaptažodis: </label>
+            <input type="password" name="slaptazodis" id="slaptazodis" required>
+        </div>
+        <!-- submitas su linku -->
+        <input type="submit" value="pateikti" onclick="window.open('personalblog.html');">
+    </form>
+</body>
+</html>
